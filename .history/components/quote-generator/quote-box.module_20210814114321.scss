@@ -20,8 +20,7 @@ $font-family-primary: 'Atkinson Hyperlegible';
     margin: auto 1rem;
     min-width: 15rem;
     display: flex;
-
-    button {
+    flex-direction: column button {
         cursor: pointer;
         font-size: $font-size-button;
         border: none;

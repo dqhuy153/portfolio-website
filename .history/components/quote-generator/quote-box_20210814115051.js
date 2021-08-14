@@ -1,9 +1,10 @@
 import { ImQuotesLeft } from 'react-icons/im';
 import { FaTwitter } from 'react-icons/fa';
-// import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from 'react-responsive';
 
 import styles from './quote-box.module.scss';
 import QuoteBoxLoader from './quote-box-loader';
+// import QuoteBoxLoaderMb from './qoute-box-loader-mb';
 
 const QuoteBox = (props) => {
     const { text, author, onTweet, onNewQuote, longText, isLoading } = props;
@@ -17,8 +18,8 @@ const QuoteBox = (props) => {
             style={{ flexDirection: isLoading ? 'row' : 'column' }}
         >
             {/* {!isLoading && isMobile && <QuoteBoxLoaderMb />} */}
-            {isLoading && <QuoteBoxLoader />}
-            {!isLoading && (
+            {!isLoading && <QuoteBoxLoader />}
+            {isLoading && (
                 <>
                     {' '}
                     {/* Quote */}

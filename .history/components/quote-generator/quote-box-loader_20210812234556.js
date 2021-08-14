@@ -9,7 +9,6 @@ const QuoteBoxLoader = (props) => (
         viewBox="0 0 476 124"
         backgroundColor="#dbdbdb"
         foregroundColor="#e8e8e8"
-        style={{ margin: '0 auto' }}
         {...props}
     >
         <rect x="29" y="25" rx="3" ry="3" width="413" height="25" />
