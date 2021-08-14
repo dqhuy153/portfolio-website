@@ -16,7 +16,7 @@ export default function Home() {
             </Head>
 
             <main className={styles['home-container']}>
-                <h1>huyy.</h1>
+                <h1>Huyy.</h1>
                 <Link href="/projects/quote-generator">Quote generator</Link>
                 <Link href="/projects/infinite-scroll">Infinite scroll</Link>
                 <Link href="/projects/stream-lab">Stream lab</Link>
