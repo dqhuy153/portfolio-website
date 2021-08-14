@@ -86,19 +86,11 @@ export default function Index(props) {
     const handleShowStoryInput = () => {
         const userStory = prompt('Enter your story:');
 
-        if (!userStory || userStory.trim().length === 0) {
-            return;
-        }
-
-        setIsLoading(true);
-
         //Translate text to speech
         TextToSpeech(userStory, (speechAudio) => {
             audioRef.current.src = speechAudio;
             audioRef.current.play();
             setIsAudioPlaying(true);
-
-            setIsLoading(false);
         });
     };
 
@@ -130,10 +122,7 @@ export default function Index(props) {
                     <ul className={styles['links']}>
                         <li className={styles['logo']}>Stories teller.</li>
                         <li className={styles['link']}>
-                            <button
-                                onClick={handleShowStoryInput}
-                                disabled={isAudioPlaying || isLoading}
-                            >
+                            <button onClick={handleShowStoryInput}>
                                 Play your story
                             </button>
                         </li>

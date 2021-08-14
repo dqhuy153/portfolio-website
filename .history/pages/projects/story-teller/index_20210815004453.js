@@ -132,7 +132,7 @@ export default function Index(props) {
                         <li className={styles['link']}>
                             <button
                                 onClick={handleShowStoryInput}
-                                disabled={isAudioPlaying || isLoading}
+                                disabled={isAudioPlaying}
                             >
                                 Play your story
                             </button>

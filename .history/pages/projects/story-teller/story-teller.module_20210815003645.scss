@@ -39,7 +39,6 @@
     letter-spacing: 1px;
     font-family: 'Pacifico', cursive;
     animation: blink 3s infinite;
-    z-index: 100;
 }
 
 .nav-container {
@@ -71,11 +70,6 @@
             border: none;
             outline: none;
             cursor: pointer;
-
-            &:disabled {
-                background: rgb(192, 192, 192);
-                cursor: not-allowed;
-            }
         }
     }
 }

@@ -73,8 +73,7 @@
             cursor: pointer;
 
             &:disabled {
-                background: rgb(192, 192, 192);
-                cursor: not-allowed;
+                background: #eee;
             }
         }
     }

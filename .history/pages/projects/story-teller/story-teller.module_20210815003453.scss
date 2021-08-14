@@ -39,7 +39,6 @@
     letter-spacing: 1px;
     font-family: 'Pacifico', cursive;
     animation: blink 3s infinite;
-    z-index: 100;
 }
 
 .nav-container {
@@ -61,22 +60,12 @@
     }
 
     .link {
-        button {
-            background: #333;
-            color: white;
-            font-size: 1.5rem;
-            padding: 1.5rem 2.5rem;
-            border-radius: 3rem;
-            letter-spacing: 0.5px;
-            border: none;
-            outline: none;
-            cursor: pointer;
-
-            &:disabled {
-                background: rgb(192, 192, 192);
-                cursor: not-allowed;
-            }
-        }
+        background: #333;
+        color: white;
+        font-size: 1.5rem;
+        padding: 1.2rem 2.2rem;
+        border-radius: 3rem;
+        letter-spacing: 0.5px;
     }
 }
 
@@ -139,7 +128,6 @@
         flex-direction: column;
         height: 75vh;
         justify-content: flex-end;
-        position: initial;
 
         h3 {
             display: none;
