@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React, { useCallback, useEffect, useState } from 'react';
 import ImagesList from '../../../components/infinite-scroll/ImagesList';
 
@@ -61,10 +62,18 @@ export default function InfiniteScrollPage(props) {
     }, [fetchImagesData]);
 
     return (
-        <main className={styles['infinite-scroll-container']}>
-            <h1 className={styles['main-title']}>Discover unslash images</h1>
-            {isLoading && <Loader className={styles.loader} />}
-            <ImagesList className={styles['images-list']} data={photos} />
-        </main>
+        <>
+            <Head>
+                <title>Infinite images</title>
+                <meta name="description" content="Infinite images" />
+            </Head>
+            <main className={styles['infinite-scroll-container']}>
+                <h1 className={styles['main-title']}>
+                    Discover unslash images
+                </h1>
+                {isLoading && <Loader className={styles.loader} />}
+                <ImagesList className={styles['images-list']} data={photos} />
+            </main>
+        </>
     );
 }

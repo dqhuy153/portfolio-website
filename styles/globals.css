@@ -12,6 +12,8 @@ html {
 
 body {
     min-height: 100vh;
+    min-height: -webkit-fill-available;
+    /* overflow: hidden; */
 }
 
 a {
@@ -21,4 +23,6 @@ a {
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
