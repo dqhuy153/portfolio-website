@@ -37,14 +37,13 @@
     z-index: 100;
     font-family: 'Pacifico', cursive;
 
-    span {
-        display: inline-block;
-        color: transparent;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-image: linear-gradient(to right, #f8a379, rgb(224, 113, 39));
-    }
+    display: inline-block;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #f5c1a7, rgb(224, 113, 39));
+
     // -webkit-mask-image: linear-gradient(to right, #f5c1a7, rgb(224, 113, 39));
     // -webkit-appearance: none;
 }

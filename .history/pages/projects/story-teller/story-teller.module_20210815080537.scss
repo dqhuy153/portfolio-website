@@ -24,52 +24,23 @@
     top: 50%;
     left: 50%;
     transform: translate(-57%, -67%);
-    background: none;
+    background: transparent;
     outline: none;
-    cursor: pointer;
-    border-radius: 50%;
-    height: 20rem;
-    width: 20rem;
-    border: none;
-    font-size: 2.5rem;
-    letter-spacing: 1px;
-    animation: blink 3s infinite;
-    z-index: 100;
-    font-family: 'Pacifico', cursive;
-
-    span {
-        display: inline-block;
-        color: transparent;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-image: linear-gradient(to right, #f8a379, rgb(224, 113, 39));
-    }
-    // -webkit-mask-image: linear-gradient(to right, #f5c1a7, rgb(224, 113, 39));
-    // -webkit-appearance: none;
+    // cursor: pointer;
+    // border-radius: 50%;
+    // height: 20rem;
+    // width: 20rem;
+    // border: none;
+    // font-size: 2.5rem;
+    // color: transparent;
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // background-image: linear-gradient(to right, #f5c1a7, rgb(224, 113, 39));
+    // letter-spacing: 1px;
+    // font-family: 'Pacifico', cursive;
+    // animation: blink 3s infinite;
+    // z-index: 100;
 }
-
-// @supports ((background-clip: text) or (-webkit-background-clip: text)) and
-//     ((text-fill-color: transparent) or (-webkit-text-fill-color: transparent)) {
-//     .stories-btn {
-//         background-image: linear-gradient(
-//             90deg,
-//             #f79533 0%,
-//             #f37055 15%,
-//             #ef4e7b 30%,
-//             #a166ab 44%,
-//             #5073b8 58%,
-//             #1098ad 72%,
-//             #07b39b 86%,
-//             #6dba82 100%
-//         );
-//         background-size: cover;
-//         -webkit-background-clip: text;
-//         background-clip: text;
-//         -webkit-text-fill-color: transparent;
-//         text-fill-color: transparent;
-//     }
-// }
 
 .nav-container {
     width: 100%;

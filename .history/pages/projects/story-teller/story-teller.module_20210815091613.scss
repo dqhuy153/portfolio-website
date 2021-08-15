@@ -19,7 +19,7 @@
     }
 }
 
-.stories-btn {
+.stories-btn span {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -36,15 +36,13 @@
     animation: blink 3s infinite;
     z-index: 100;
     font-family: 'Pacifico', cursive;
+    display: inline-block;
 
-    span {
-        display: inline-block;
-        color: transparent;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-image: linear-gradient(to right, #f8a379, rgb(224, 113, 39));
-    }
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #f5c1a7, rgb(224, 113, 39));
     // -webkit-mask-image: linear-gradient(to right, #f5c1a7, rgb(224, 113, 39));
     // -webkit-appearance: none;
 }
