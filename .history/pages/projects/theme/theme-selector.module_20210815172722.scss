@@ -1,0 +1,9 @@
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    p {
+        font-size: 10rem;
+    }
+}

@@ -1,0 +1,10 @@
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dde;
+
+    p {
+        font-size: 10rem;
+    }
+}

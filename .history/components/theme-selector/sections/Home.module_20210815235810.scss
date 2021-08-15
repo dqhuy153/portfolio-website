@@ -1,0 +1,11 @@
+.section-container {
+    flex-direction: column;
+}
+
+.toggle-container {
+    color: #eee;
+
+    label:before {
+        background-color: #eee;
+    }
+}

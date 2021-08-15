@@ -1,0 +1,50 @@
+[
+    {
+        "id": "T001",
+        "name": "light-default",
+        "colors": {
+            "primary": "#333",
+            "secondary": "#eee",
+            "background": "#fff",
+            "body": "#fff",
+            "text": "#333",
+            "button-primary": {
+                "text": "#fff",
+                "background": "#333"
+            },
+            "button-secondary": {
+                "text": "#333",
+                "background": "#fff"
+            },
+            "link": {
+                "text": "#1771bb",
+                "background": "#fff"
+            }
+        },
+        "font": ""
+    },
+    {
+        "id": "T002",
+        "name": "dark-default",
+        "colors": {
+            "primary": "#fff",
+            "secondary": "#eee",
+            "background": "#333",
+            "body": "#333",
+            "text": "#fff",
+            "button-primary": {
+                "text": "#333",
+                "background": "#fff"
+            },
+            "button-secondary": {
+                "text": "#fff",
+                "background": "#333"
+            },
+            "link": {
+                "text": "#1771bb",
+                "background": "#fff"
+            }
+        },
+        "font": ""
+    }
+]
