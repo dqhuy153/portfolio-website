@@ -91,25 +91,14 @@
     }
 
     .add-container {
-        padding-top: 3rem;
+        padding-top: 0rem;
 
         h2 {
-            margin-bottom: 8rem;
+            margin-bottom: 4rem;
         }
     }
 
     .add-content {
         flex-direction: column;
-    }
-
-    .add-content_right {
-        margin-top: 5rem;
-        margin-left: 0rem;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .add-theme_form {
-        margin-left: 2rem;
     }
 }

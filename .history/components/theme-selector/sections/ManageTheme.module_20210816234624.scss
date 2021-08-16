@@ -76,40 +76,9 @@
 
 @media screen and (max-width: 1279px) {
     .container {
-        padding: 10rem 3rem;
+        padding: 10rem 5rem;
     }
     .add-content_right {
         margin-left: 10rem;
-    }
-}
-
-@media screen and (max-width: 1023px) {
-    .container {
-        h1 {
-            margin-bottom: 4rem;
-        }
-    }
-
-    .add-container {
-        padding-top: 3rem;
-
-        h2 {
-            margin-bottom: 8rem;
-        }
-    }
-
-    .add-content {
-        flex-direction: column;
-    }
-
-    .add-content_right {
-        margin-top: 5rem;
-        margin-left: 0rem;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .add-theme_form {
-        margin-left: 2rem;
     }
 }

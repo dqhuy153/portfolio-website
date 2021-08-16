@@ -42,11 +42,10 @@ export default function Card({
                     secondaryBtnBgColor || colors?.buttonSecondary.background,
                 '--secondary-button-color':
                     secondaryBtnColor || colors?.buttonSecondary.text,
-                '--box-shadow-color': boxShadowColor
-                    ? boxShadowColor
-                    : colors?.boxShadow?.rgba
-                    ? `rgba(${colors?.boxShadow.rgba.r}, ${colors?.boxShadow.rgba.g}, ${colors?.boxShadow.rgba.b}, ${colors?.boxShadow.rgba.a})`
-                    : colors.boxShadow,
+                '--box-shadow-color':
+                    boxShadowColor || colors?.boxShadow?.rgba
+                        ? `rgba(${colors?.boxShadow.rgba.r}, ${colors?.boxShadow.rgba.g}, ${colors?.boxShadow.rgba.b}, ${colors?.boxShadow.rgba.a})`
+                        : colors.boxShadow,
             }}
         >
             <p className={styles['primary-color']}>{name}</p>

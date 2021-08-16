@@ -101,15 +101,12 @@
     .add-content {
         flex-direction: column;
     }
-
+    .add-row {
+        padding: 0;
+    }
     .add-content_right {
-        margin-top: 5rem;
         margin-left: 0rem;
         align-items: center;
         justify-content: center;
-    }
-
-    .add-theme_form {
-        margin-left: 2rem;
     }
 }
