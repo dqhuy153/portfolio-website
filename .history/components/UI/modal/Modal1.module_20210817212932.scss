@@ -1,0 +1,99 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 200;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-width: 30rem;
+    max-width: 90%;
+
+    background-color: var(--background-color);
+
+    border-radius: 14px;
+    box-shadow: 0 10px 8px var(--box-shadow-color);
+    z-index: 30;
+    animation: slide-down 300ms ease-out forwards;
+    max-height: 80vh;
+    overflow: auto;
+    z-index: 201;
+
+    color: var(--primary-color);
+
+    .header {
+        font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+        border-bottom: 1px solid #eee;
+        padding: 2rem 2.5rem;
+
+        .close-btn {
+            cursor: pointer;
+        }
+    }
+
+    .body {
+        padding: 2rem 0.5rem;
+        font-size: 2rem;
+        padding: 2rem 2.5rem;
+        line-height: 1.5;
+        color: var(--secondary-color);
+
+        input {
+            width: 30%;
+            border: none;
+            border-bottom: 1px dashed var(--primary-color);
+            outline: none;
+            font-size: 2.4rem;
+            margin: 1rem 0;
+            padding: 0 0.3rem;
+            background: none;
+            color: var(--primary-color);
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: flex-end;
+        padding: 2rem 2.5rem;
+        border-top: 1px solid #eee;
+
+        button {
+            padding: 1rem 1.5rem;
+            border: none;
+            min-width: 10rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            font-size: 1.6rem;
+            transition: all 0.2s ease;
+
+            &:hover {
+                box-shadow: 0 2px 8px var(--box-shadow-color);
+            }
+        }
+
+        .secondary-btn {
+            margin-right: 2rem;
+            background-color: var(--primary-button-bg-color);
+            color: var(--primary-button-color);
+            border: 1px solid var(--primary-color);
+        }
+
+        .primary-btn {
+            background-color: var(--secondary-button-bg-color);
+            color: var(--secondary-button-color);
+            border: 1px solid var(--primary-color);
+        }
+    }
+}
