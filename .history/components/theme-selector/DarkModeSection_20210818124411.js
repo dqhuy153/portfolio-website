@@ -30,8 +30,10 @@ export default function DarkModeSection({
             <div className={styles['home__body']}>
                 <p>
                     Manage theme, design your custom theme,... and totally can
-                    apply your theme to all pages. All references and material
-                    are in About section. Just try it and feel.
+                    apply your theme to all pages. Just try it and fell. We
+                    lives where design, technology, and experience collide. We
+                    are obsessed with creativity — challenging what is, while
+                    defining what comes next.
                 </p>
             </div>
         </section>

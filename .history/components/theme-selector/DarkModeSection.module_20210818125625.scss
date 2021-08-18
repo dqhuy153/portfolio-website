@@ -20,19 +20,10 @@
     }
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1023px) {
     .section-container {
         .home__body {
             width: 70%;
-        }
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .section-container {
-        .home__body {
-            width: 85%;
-            margin-top: 2rem;
         }
     }
 }

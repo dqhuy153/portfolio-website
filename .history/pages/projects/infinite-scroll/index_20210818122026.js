@@ -8,7 +8,7 @@ import styles from './infinite-scroll.module.scss';
 
 //env here
 const ACCESS_UNFLASH_KEY = process.env.ACCESS_UNFLASH_KEY;
-const NUMBER_OF_IMAGES_RETURN = 25;
+const NUMBER_OF_IMAGES_RETURN = 20;
 
 let readyToFetchNew = false;
 
