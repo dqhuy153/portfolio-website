@@ -9,13 +9,6 @@ export default function About({ id, className, ...props }) {
             <div className={styles.content}>
                 <h2>References and Materials</h2>
                 <a
-                    href="https://www.mongodb.com/developer/how-to/nextjs-with-mongodb/"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    NextJs with Mongodb
-                </a>
-                <a
                     href="https://dribbble.com/"
                     target="_blank"
                     rel="noreferrer"
@@ -35,6 +28,13 @@ export default function About({ id, className, ...props }) {
                     rel="noreferrer"
                 >
                     Color picker
+                </a>
+                <a
+                    href="https://www.mongodb.com/developer/how-to/nextjs-with-mongodb/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    NextJs with Mongodb
                 </a>
             </div>
             <div className={styles.me}>
