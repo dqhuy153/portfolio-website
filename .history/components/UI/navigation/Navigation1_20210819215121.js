@@ -46,12 +46,7 @@ export default function Navigation1({
         transform: showMenu ? 'translateY(0)' : 'translateY(-150%)',
     });
 
-    //handle nav item click in menu
-    const handleNavItemClick = () => {
-        if (isMobile) {
-            setShowMenu(false);
-        }
-    };
+    const bind = useDrag();
 
     //handle open/close menu
     const handleChangeMenu = (event) => {
@@ -133,7 +128,7 @@ export default function Navigation1({
                             '--nav-hover-color': navHoverColor,
                         }}
                         className={styles['nav__list--item']}
-                        onClick={handleNavItemClick}
+                        onClick={() => setShowMenu(false)}
                     >
                         {/* Custom active link */}
                         <ActiveLink
