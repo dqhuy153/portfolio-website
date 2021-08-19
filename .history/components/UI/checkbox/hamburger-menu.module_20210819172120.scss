@@ -1,0 +1,59 @@
+.container {
+    input {
+        display: none;
+    }
+
+    label {
+        // position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin: 0px auto 0 auto;
+        cursor: pointer;
+    }
+
+    label div {
+        position: relative;
+        top: 0;
+        height: 12px;
+        background-color: var(--primary-color);
+        margin-bottom: 12px;
+        transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width,
+            0.3s ease right;
+        border-radius: 2px;
+    }
+
+    label div:first-child {
+        transform-origin: 0;
+    }
+
+    label div:last-child {
+        margin-bottom: 0;
+        transform-origin: 30px;
+    }
+
+    label div:nth-child(2) {
+        right: 0;
+        width: 60px;
+    }
+
+    input:checked + label div:first-child {
+        top: -6px;
+        transform: rotateZ(45deg);
+    }
+
+    input:checked + label div:last-child {
+        top: 6px;
+        transform: rotateZ(45deg);
+    }
+
+    input:checked + label div:nth-child(2) {
+        width: 85px;
+        top: 0;
+        right: 13px;
+        transform: rotateZ(-45deg);
+    }
+}
