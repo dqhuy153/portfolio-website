@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: var(--container-direction);
+
+    width: var(--container-width);
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: var(--font-size);
+    gap: 5rem;
+}
+
+.image {
+    width: var(--media-width);
+}
+
+.content-container {
+    width: var(--content-width);
+}
+
+.content-position {
+}

@@ -1,0 +1,21 @@
+.content-slide {
+    padding-bottom: 50vh;
+
+    a {
+        font-size: var(--font-size);
+        color: var(--link-color);
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-top: 5rem;
+
+        span {
+            margin-right: 1rem;
+        }
+
+        .link-icon {
+            font-size: 3rem;
+            margin-top: 0.3rem;
+        }
+    }
+}

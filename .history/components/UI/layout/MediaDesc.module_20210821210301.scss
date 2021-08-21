@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: var(--container-direction);
+}
+
+.image {
+    width: var(--media-width);
+}
+
+.content-position {
+}

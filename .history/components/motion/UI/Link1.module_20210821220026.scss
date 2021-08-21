@@ -1,0 +1,19 @@
+.container {
+    a {
+        font-size: var(--font-size);
+        color: var(--link-color);
+        justify-content: var(--link-justify-content);
+        display: flex;
+        align-items: center;
+        margin: var(--link-margin);
+
+        span {
+            margin-right: 1rem;
+        }
+
+        .link-icon {
+            font-size: 3rem;
+            margin-top: 0.3rem;
+        }
+    }
+}

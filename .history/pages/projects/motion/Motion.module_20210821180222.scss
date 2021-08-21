@@ -1,0 +1,41 @@
+.section {
+    min-height: 100vh;
+    padding-top: 5rem;
+}
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 3.5rem;
+    line-height: 1.4;
+    font-weight: 300;
+    max-width: 95rem;
+    text-align: justify;
+
+    p {
+        overflow: hidden;
+    }
+}
+
+.main-body {
+    background: var(--background-color);
+    color: var(--primary-color);
+}
+
+.content-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50vh;
+}
+
+@media screen and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 767px) {
+    .home {
+        font-size: 2.2rem;
+    }
+}

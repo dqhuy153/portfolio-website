@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-size);
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+
+    ol li::marker {
+        font-size: calc(var(--font-size) * 75 / 100);
+        font-weight: 500;
+        line-height: 1;
+    }
+}
+
+.list-container {
+    margin: var(--margin-list);
+    overflow: hidden;
+    display: flex;
+    padding-left: 100%;
+}
+
+.list {
+    display: flex;
+}
+
+.item {
+    margin: var(--margin-item);
+}
+
+.marquee-left {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marqueeLeft var(--duration) linear infinite;
+}
+
+.marquee-right {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marqueeRight var(--duration) linear infinite;
+}
+
+// .marquee2 {
+//     // animation-delay: 25s;
+// }
+
+@keyframes marqueeLeft {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+@keyframes marqueeRight {
+    0% {
+        transform: translate(-100%, 0);
+    }
+    100% {
+        transform: translate(0%, 0);
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        --font-size: calc(var(--font-size) * 75 / 100);
+    }
+}
