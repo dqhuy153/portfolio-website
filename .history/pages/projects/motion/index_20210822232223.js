@@ -25,7 +25,7 @@ export default function MotionPage(props) {
     const { theme } = useTheme();
 
     const preEndRef = useRef();
-    const isMobile = useMediaQuery({ query: '(max-width: 676px)' });
+    const isMobile = useMediaQuery({ query: 'max-width: 676px' });
 
     //animation in home first load
     const pHomeAnimated = useSpring({
@@ -53,9 +53,8 @@ export default function MotionPage(props) {
         window.addEventListener('scroll', () => {
             //pre-end Animation trigger
             if (
-                preEndRef?.current &&
                 window.scrollY + preEndRef.current.clientHeight >
-                    preEndRef.current.offsetTop + 200
+                preEndRef.current.offsetTop + 200
             ) {
                 pPreEndApi.start({
                     opacity: 1,
@@ -450,7 +449,7 @@ export default function MotionPage(props) {
                                 </animated.p>
                             )}
                             {isMobile && (
-                                <p>
+                                <p style={pPreEndAnimated}>
                                     We fuse insights, opportunities, and
                                     unexpected expressions into resonant brand
                                     experiences.

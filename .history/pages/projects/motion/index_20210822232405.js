@@ -53,9 +53,8 @@ export default function MotionPage(props) {
         window.addEventListener('scroll', () => {
             //pre-end Animation trigger
             if (
-                preEndRef?.current &&
                 window.scrollY + preEndRef.current.clientHeight >
-                    preEndRef.current.offsetTop + 200
+                preEndRef.current.offsetTop + 200
             ) {
                 pPreEndApi.start({
                     opacity: 1,

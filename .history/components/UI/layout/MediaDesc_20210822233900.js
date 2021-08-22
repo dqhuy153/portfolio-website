@@ -166,8 +166,6 @@ export default function MediaDesc({
                 setTranslateY(0);
             }
         });
-
-        return () => setTranslateY(-50);
     }, [delayY]);
 
     return (

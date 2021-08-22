@@ -167,7 +167,23 @@ export default function MediaDesc({
             }
         });
 
-        return () => setTranslateY(-50);
+        return window.removeEventListener('scroll', () => {
+            if (
+                offsetTop - clientHeight + delayY < window.scrollY &&
+                window.scrollY < offsetHeight + offsetTop + delayY
+            ) {
+                setTranslateY(
+                    (window.scrollY - (offsetTop - clientHeight + delayY)) / 16
+                );
+
+                // console.log(offsetTop - clientHeight + delayY);
+                // console.log(window.scrollY);
+                // console.log(offsetHeight + offsetTop + delayY);
+                // console.log('inside');
+            } else {
+                setTranslateY(0);
+            }
+        });
     }, [delayY]);
 
     return (

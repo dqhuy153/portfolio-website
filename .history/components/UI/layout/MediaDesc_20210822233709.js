@@ -167,7 +167,7 @@ export default function MediaDesc({
             }
         });
 
-        return () => setTranslateY(-50);
+        // console.dir(containerRef.current);
     }, [delayY]);
 
     return (
