@@ -155,7 +155,7 @@ export default function MediaDesc({
                 window.scrollY < offsetHeight + offsetTop + delayY
             ) {
                 setTranslateY(
-                    (window.scrollY - (offsetTop - clientHeight + delayY)) / 16
+                    (window.scrollY - (offsetTop - clientHeight + delayY)) / 18
                 );
 
                 // console.log(offsetTop - clientHeight + delayY);
