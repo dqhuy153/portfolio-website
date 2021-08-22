@@ -339,7 +339,7 @@ export default function MotionPage(props) {
                                 underTabletContentWidth="100%"
                                 underTabletContainerPadding="0 3rem 8rem"
                                 underTabletMediaWidth="100%"
-                                delayYAfter={400}
+                                delayYAfter={200}
                             >
                                 <div className={styles['image-desc']}>
                                     <h2>Art Canada Institute</h2>

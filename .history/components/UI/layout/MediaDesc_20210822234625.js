@@ -171,7 +171,7 @@ export default function MediaDesc({
         });
 
         return () => setTranslateY(-50);
-    }, [delayYBefore, delayYAfter]);
+    }, [delayY]);
 
     return (
         <div

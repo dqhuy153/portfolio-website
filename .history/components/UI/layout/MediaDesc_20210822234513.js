@@ -73,7 +73,7 @@ export default function MediaDesc({
     underTabletContainerFontSize,
 
     className,
-    delayYBefore = 0, //use to calc right offsetTop (element change when use transformY) //tricky
+    delayY = 0, //use to calc right offsetTop (element change when use transformY) //tricky
     delayYAfter = 0, //ignore it //fix small bug
 
     ...props
@@ -152,13 +152,11 @@ export default function MediaDesc({
         // top < scrollY < top + height
         window.addEventListener('scroll', () => {
             if (
-                offsetTop - clientHeight + delayYBefore < window.scrollY &&
-                window.scrollY < offsetHeight + offsetTop + delayYAfter
+                offsetTop - clientHeight + delayY < window.scrollY &&
+                window.scrollY < offsetHeight + offsetTop + delayY
             ) {
                 setTranslateY(
-                    (window.scrollY -
-                        (offsetTop - clientHeight + delayYBefore)) /
-                        16
+                    (window.scrollY - (offsetTop - clientHeight + delayY)) / 16
                 );
 
                 // console.log(offsetTop - clientHeight + delayY);
@@ -171,7 +169,7 @@ export default function MediaDesc({
         });
 
         return () => setTranslateY(-50);
-    }, [delayYBefore, delayYAfter]);
+    }, [delayY]);
 
     return (
         <div
