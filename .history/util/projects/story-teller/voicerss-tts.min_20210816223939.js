@@ -1,4 +1,4 @@
-const VOICE_RSS_KEY = process.env.NEXT_PUBLIC_VOICE_RSS_KEY;
+const VOICE_RSS_KEY = process.env.VOICE_RSS_KEY;
 
 export default function TextToSpeech(text, callback) {
     var VoiceRSS = {

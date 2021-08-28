@@ -16,6 +16,8 @@ export default function InfiniteScrollPage(props) {
     const [isLoading, setIsLoading] = useState(false);
     const [photos, setPhotos] = useState([]);
 
+    console.log(ACCESS_UNSPLASH_KEY);
+
     //Fetch photos from Unsplash
     const fetchImagesData = useCallback(async (fetchOption) => {
         const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${ACCESS_UNSPLASH_KEY}&count=${NUMBER_OF_IMAGES_RETURN}`;

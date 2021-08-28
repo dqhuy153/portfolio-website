@@ -7,7 +7,7 @@ import Loader from '../../../components/infinite-scroll/Loader';
 import styles from './infinite-scroll.module.scss';
 
 //env here
-const ACCESS_UNSPLASH_KEY = process.env.NEXT_PUBLIC_ACCESS_UNSPLASH_KEY;
+const ACCESS_UNSPLASH_KEY = process.env.ACCESS_UNSPLASH_KEY;
 const NUMBER_OF_IMAGES_RETURN = 25;
 
 let readyToFetchNew = false;
@@ -15,6 +15,8 @@ let readyToFetchNew = false;
 export default function InfiniteScrollPage(props) {
     const [isLoading, setIsLoading] = useState(false);
     const [photos, setPhotos] = useState([]);
+
+    console.log(ACCESS_UNSPLASH_KEY);
 
     //Fetch photos from Unsplash
     const fetchImagesData = useCallback(async (fetchOption) => {
