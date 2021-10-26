@@ -21,7 +21,7 @@ export default function Home() {
         <Link href="/projects/stream-lab">Stream lab</Link>
         <Link href="/projects/story-teller">Story teller</Link>
         <Link href="https://todo-list-nine-sandy.vercel.app/">
-          Advanced TodoList - (Random account to login)
+          TodoList. (Advanced) - Random account to login
         </Link>
         <Link href="/projects/theme">Theme selector</Link>
         <Link href="/projects/motion">Motion - Animation</Link>

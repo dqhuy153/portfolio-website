@@ -289,10 +289,10 @@ export default function ThemePage(props) {
         {/* Navigation */}
         <Navigation1
           items={[
-            // {
-            //   title: 'Dark mode',
-            //   link: '/projects/theme#dark-mode',
-            // },
+            {
+              title: 'Dark mode',
+              link: '/projects/theme#dark-mode',
+            },
             {
               title: 'Select theme',
               link: '/projects/theme#select-theme',

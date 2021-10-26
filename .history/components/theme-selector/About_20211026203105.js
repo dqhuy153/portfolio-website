@@ -51,7 +51,7 @@ export default function About({ id, className, ...props }) {
           target="_blank"
           rel="noreferrer"
         >
-          GitHub..
+          Update soon in GitHub..
         </a>
       </div>
     </section>

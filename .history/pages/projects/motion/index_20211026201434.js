@@ -102,21 +102,21 @@ export default function MotionPage(props) {
             {/* Navigation */}
             <Navigation1
               items={[
-                // {
-                //   title: 'Work',
-                //   link: '/projects/motion/work',
-                // },
-                // {
-                //   title: 'Agency',
-                //   link: '/projects/motion/agency',
-                // },
-                // {
-                //   title: 'Contact',
-                //   link: '/projects/motion/contact',
-                // },
+                {
+                  title: 'Work',
+                  link: '/projects/motion/work',
+                },
+                {
+                  title: 'Agency',
+                  link: '/projects/motion/agency',
+                },
+                {
+                  title: 'Contact',
+                  link: '/projects/motion/contact',
+                },
                 {
                   title: 'Select theme',
-                  link: '/projects/theme#select-theme',
+                  link: '/projects/theme/',
                 },
                 { title: 'Dashboard', link: '/' },
               ]}
