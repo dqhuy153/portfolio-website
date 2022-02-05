@@ -15,6 +15,12 @@ export default function Home() {
       <main className={styles['home-container']}>
         <h1>Huy Dang.</h1>
         
+        <Link href="https://talofapass.as.gov/">
+          TalofaPASS (contributor)
+        </Link>
+        <Link href="#">
+          GuruAcademy - Online teaching system like Udemy (In progess) (NextJs + Redux + Thunk + Nodejs + Mongoose)
+        </Link>
         <Link href="https://huydang-blog.vercel.app/">
           Blog - FE (NextJs + Typescript + NextAuth + TailwindCSS + Recoil + Sanity studio)
         </Link>
