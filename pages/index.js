@@ -37,6 +37,12 @@ export default function Home() {
         </Link>
         <Link href="/projects/theme">Theme selector (NextJs)</Link>
         <Link href="/projects/motion">Motion - Animation (NextJs)</Link>
+        <Link href="https://github.com/dqhuy153/mobileShopWebsite">
+          Mobile Shop - Full flow (Web app + Web admin) (.NET + C# WebForm) 
+        </Link>
+        <Link href="https://github.com/dqhuy153/olive-shop-asp.net-web-form">
+          Olive Fashion Shop - Full flow (Web app + Web admin) (.NET + C# WebForm) 
+        </Link>
       </main>
 
       <footer></footer>
