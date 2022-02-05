@@ -13,18 +13,24 @@ export default function Home() {
       </Head>
 
       <main className={styles['home-container']}>
-        <h1>huyy.</h1>
-
-        <Link href="/projects/quote-generator">Quote generator</Link>
-        <Link href="https://react-timer-delta.vercel.app/">Basic timer</Link>
-        <Link href="/projects/infinite-scroll">Infinite scroll</Link>
-        <Link href="/projects/stream-lab">Stream lab</Link>
-        <Link href="/projects/story-teller">Story teller</Link>
-        <Link href="https://todo-list-nine-sandy.vercel.app/">
-          Advanced TodoList - (Random account to login)
+        <h1>Huy Dang.</h1>
+        
+        <Link href="https://huydang-blog.vercel.app/">
+          Blog - FE (NextJs + Typescript + NextAuth + TailwindCSS + Recoil + Sanity studio)
         </Link>
-        <Link href="/projects/theme">Theme selector</Link>
-        <Link href="/projects/motion">Motion - Animation</Link>
+        <Link href="https://huyblog.sanity.studio/">
+          Blog - BE (Not public)
+        </Link>
+        <Link href="/projects/quote-generator">Quote generator (React)</Link>
+        <Link href="https://react-timer-delta.vercel.app/">Basic dynamic timer (React)</Link>
+        <Link href="/projects/infinite-scroll">Infinite scroll (React + Unflash API)</Link>
+        <Link href="/projects/stream-lab">Stream lab (React + WebRTC) (uncomplete)</Link>
+        <Link href="/projects/story-teller">Story teller (React + Voicerss API)</Link>
+        <Link href="https://todo-list-nine-sandy.vercel.app/">
+          Advanced TodoList - (Random account to login) (React)
+        </Link>
+        <Link href="/projects/theme">Theme selector (NextJs)</Link>
+        <Link href="/projects/motion">Motion - Animation (NextJs)</Link>
       </main>
 
       <footer></footer>
